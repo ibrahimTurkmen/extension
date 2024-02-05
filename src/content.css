@@ -1,0 +1,196 @@
+/* src/content.css */
+.my-extension {
+    padding: 20px;
+}
+
+.my-extension h1 {
+    color: #000;
+}
+.description-list ul{
+    list-style: none;
+    padding: 0px;
+} 
+.description-list li{
+  
+} 
+.vpn-button {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    height: 300px;
+    justify-content: center;
+    outline: none;
+    align-content: center;
+    align-items: center;
+
+
+}
+
+.vpn-button button {
+    background-color: #ebf3ff;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #000;
+    background: url(images/shutdown.png) #dadada;
+    background-size: contain;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease-in-out;
+    z-index: 3;
+}
+
+.drawer.open {
+    left: 0;
+}
+
+.drawer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer li {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.drawer button {
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-btn-1 {
+    height: 32px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.menu-btn-1 span,
+.menu-btn-1 span::before,
+.menu-btn-1 span::after {
+    background: white;
+    border-radius: 3px;
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    margin-top: 13px;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.menu-btn-1 span::before {
+    margin-top: -12px;
+}
+
+.menu-btn-1 span::after {
+    margin-top: 12px;
+}
+
+.menu-btn-1.active span {
+    background: transparent;
+}
+
+.menu-btn-1.active span::before {
+    margin-top: 0;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menu-btn-1.active span::after {
+    margin-top: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.footer-wrp {
+    position: fixed;
+    bottom: 20px;
+
+}
+
+.button-protect {
+    background: url(images/protect.svg);
+    width: 18.67px;
+    height: 24px;
+    background-size: 18.67px 24px;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    background-position: center;
+    margin-right: 15px;
+}
+
+.button-exclude {
+    background: url(images/exclude.svg);
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    width: 18.67px;
+    height: 24px;
+    background-size: 18.67px 24px;
+    background-position: center;
+}
+.connected {
+    background: url(images/shutdown.png) #4CAF50 !important;
+    color: #fff !important;
+    background-size: contain !important;
+}
+
+.servers {
+    background: url(images/banner-main-icon-servers.svg) ;
+    width: 15px;
+    height: 14px;
+    display: inline-block;
+}
+
+.optimize {
+    background: url(images/banner-main-icon-optimize.svg) ;
+    width: 15px;
+    height: 14px;
+    display: inline-block;
+}
+
+.unlimited {
+    background: url(images/banner-main-icon-unlimited.svg) ;
+    width: 15px;
+    height: 14px;
+    display: inline-block;
+}
+
+.footer-wrp {
+    background: linear-gradient(180deg,#fff,#e4eeff);
+    box-shadow: 1px 4px 14px #0000001a;
+    color: #293a53;
+    width:100%;
+    padding: 10px;
+    bottom: 0px;
+    left: 0px
+}
